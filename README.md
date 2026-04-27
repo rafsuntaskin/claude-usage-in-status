@@ -21,23 +21,37 @@ All data comes directly from Claude Code's stdin — no external API calls.
 
 ## Installation
 
-```
-/plugin install https://github.com/rafsuntaskin/claude-usage-in-status
+### Via marketplace
+
+Add the `ai-plugins` marketplace to `~/.claude/settings.json`:
+
+```json
+{
+  "extraKnownMarketplaces": {
+    "ai-plugins": {
+      "source": {
+        "source": "github",
+        "repo": "rafsuntaskin/ai-plugins"
+      }
+    }
+  }
+}
 ```
 
-The statusline configures itself automatically on the first session after install. Restart Claude Code and it will appear.
+Then install:
 
-### Manual install
+```
+/plugin install claude-usage-in-status@ai-plugins
+```
+
+### Manual
 
 ```bash
 git clone https://github.com/rafsuntaskin/claude-usage-in-status ~/.claude/plugins/claude-usage-in-status
-```
-
-Then run the setup script once:
-
-```bash
 node ~/.claude/plugins/claude-usage-in-status/setup.js
 ```
+
+Restart Claude Code and the statusline will appear.
 
 ## How the context delta works
 
