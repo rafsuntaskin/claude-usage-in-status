@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git init *)",
+      "Bash(git add *)",
+      "Bash(git branch *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git -C /Users/rafsuntaskin/Downloads/usage-tracker-plugin log --oneline)",
+      "Bash(git -C /Users/rafsuntaskin/Downloads/usage-tracker-plugin status)",
+      "Bash(node /Users/rafsuntaskin/Downloads/usage-tracker-plugin/hooks/scripts/statusline.js)",
+      "Bash(HOME=/tmp/faketest node hooks/scripts/statusline.js)",
+      "Bash(cp /Users/rafsuntaskin/Downloads/usage-tracker-plugin/hooks/scripts/statusline.js ~/.claude/plugins/usage-tracker/hooks/scripts/statusline.js)"
+    ]
+  }
+}

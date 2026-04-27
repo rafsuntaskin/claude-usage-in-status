@@ -1,0 +1,11 @@
+{
+  "name": "usage-tracker",
+  "version": "1.0.0",
+  "description": "Track token usage and costs per prompt for Claude Code and Codex sessions. Logs every interaction with detailed breakdowns of input, output, cache, and estimated cost.",
+  "author": "usage-tracker",
+  "homepage": "https://github.com/usage-tracker/claude-usage-tracker",
+  "license": "MIT",
+  "engines": {
+    "claude-code": ">=2.0.0"
+  }
+}
