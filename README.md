@@ -23,24 +23,8 @@ All data comes directly from Claude Code's stdin — no external API calls.
 
 ### Via marketplace
 
-Add the `ai-plugins` marketplace to `~/.claude/settings.json`:
-
-```json
-{
-  "extraKnownMarketplaces": {
-    "ai-plugins": {
-      "source": {
-        "source": "github",
-        "repo": "rafsuntaskin/ai-plugins"
-      }
-    }
-  }
-}
 ```
-
-Then install:
-
-```
+/plugin marketplace add rafsuntaskin/ai-plugins
 /plugin install claude-usage-in-status@ai-plugins
 ```
 
