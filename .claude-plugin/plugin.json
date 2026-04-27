@@ -1,9 +1,9 @@
 {
-  "name": "usage-tracker",
+  "name": "claude-usage-in-status",
   "version": "1.0.0",
-  "description": "Track token usage and costs per prompt for Claude Code and Codex sessions. Logs every interaction with detailed breakdowns of input, output, cache, and estimated cost.",
-  "author": "usage-tracker",
-  "homepage": "https://github.com/usage-tracker/claude-usage-tracker",
+  "description": "Renders live context, token, and rate limit usage in the Claude Code statusline.",
+  "author": "rafsuntaskin",
+  "homepage": "https://github.com/rafsuntaskin/claude-usage-in-status",
   "license": "MIT",
   "engines": {
     "claude-code": ">=2.0.0"
