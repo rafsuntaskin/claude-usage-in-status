@@ -2,7 +2,10 @@
   "name": "claude-usage-in-status",
   "version": "1.0.0",
   "description": "Renders live context, token, and rate limit usage in the Claude Code statusline.",
-  "author": "rafsuntaskin",
+  "author": {
+    "name": "rafsuntaskin",
+    "email": "rafsun.aiub@gmail.com"
+  },
   "homepage": "https://github.com/rafsuntaskin/claude-usage-in-status",
   "license": "MIT",
   "engines": {
