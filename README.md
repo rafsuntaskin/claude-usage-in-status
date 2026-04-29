@@ -7,7 +7,7 @@ A Claude Code plugin that shows live context, token, and rate limit usage in you
 ![Statusline example](statusline.jpg)
 
 ```
-🧠 57% (+2.0%) 🌀3 ✨94 ♻️ 108.8K │ session 90% 3h15m (9am) │ week 37% 4d4h (30 APR 10am)
+🧠 57% (+2%) 🌀3 ✨94 ♻️ 108.8K │ session 90% 3h15m (9am) │ week 37% 4d4h (30 APR 10am)
 ```
 
 | Segment | Source | Meaning |

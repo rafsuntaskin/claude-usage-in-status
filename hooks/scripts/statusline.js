@@ -107,13 +107,13 @@ async function main() {
     : "";
 
   const ctxStr = `${ctxColor(ctxPct)}🧠 ${ctxPct}%${C.reset}`
-    + (deltaPct > 0 ? ` ${C.gray}(+${deltaPct.toFixed(1)}%)${C.reset}` : "")
+    + (deltaPct > 0 ? ` ${C.gray}(+${Math.round(deltaPct)}%)${C.reset}` : "")
     + tokStr;
 
   // ── Session (5h) segment ──────────────────────────────────────
   let sessionStr = "";
   if (fiveHour.used_percentage != null) {
-    const pct      = fiveHour.used_percentage;
+    const pct      = Math.round(fiveHour.used_percentage);
     const resetAt  = fiveHour.resets_at ? new Date(fiveHour.resets_at * 1000) : null;
     const remaining = resetAt ? fmtRemaining(resetAt - now) : "";
     const resetTime = resetAt ? fmtTime(resetAt) : "";
@@ -124,7 +124,7 @@ async function main() {
   // ── Week (7d) segment ─────────────────────────────────────────
   let weekStr = "";
   if (sevenDay.used_percentage != null) {
-    const pct      = sevenDay.used_percentage;
+    const pct      = Math.round(sevenDay.used_percentage);
     const resetAt  = sevenDay.resets_at ? new Date(sevenDay.resets_at * 1000) : null;
     const remaining = resetAt ? fmtRemaining(resetAt - now) : "";
     const resetDT  = resetAt ? fmtDateTime(resetAt) : "";
