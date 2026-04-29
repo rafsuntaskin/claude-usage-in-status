@@ -1,6 +1,6 @@
 {
   "name": "claude-usage-in-status",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Renders live context, token, and rate limit usage in the Claude Code statusline.",
   "author": {
     "name": "rafsuntaskin",
